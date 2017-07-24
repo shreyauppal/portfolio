@@ -32,48 +32,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-container">
  <p id="demo">Wanna know one good fact about me? Click the button below, "Click me" and before you leave please refresh the page so the other viewers could see the effect!</p>
  <button type="button" onclick='document.getElementById("demo").innerHTML = "Im left handed and have a true obsession over mac and cheese"
-
- 
-<style>
-#container {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  background: purple;
-}
-#animate {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  background-color:blue;
-}
-</style>
-<body>
-
-<p>
-<button onclick="myMove()">Click Me</button>
-</p> 
-
-<div id ="container">
-<div id ="animate"></div>
-</div>
-
-<script>
-function myMove() {
-  var elem = document.getElementById("animate");   
-  var pos = 0;
-  var id = setInterval(frame, 5);
-  function frame() {
-    if (pos == 350) {
-      clearInterval(id);
-    } else {
-      pos++; 
-      elem.style.top = pos + 'px'; 
-      elem.style.left = pos + 'px'; 
-    }
-  }
-}
-</script>                                                                                                                                        
+                                                                                                                                      
           
  
 
